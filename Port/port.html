@@ -36,6 +36,8 @@ body {
     font-family: Helvetica Bold;
 }
 
+
+
 .navbar-brand {
     font-size: 30px;
     font-family: Helvetica Bold;
@@ -51,49 +53,64 @@ h1 {
   text-align:center;
 }
 
-.aboutText{
+#Aboutme{
+  margin-top:90px;
+}
+
+.btn {
   text-align:center;
+}
+
+#projects{
+  margin-bottom:30px;
+}
+
+#Messageme{
+  font-size:50px;
 }
 </style>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">JASON PAULINO</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT<span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">PROJECT</a>
-      </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  
+  <div class='container'>
+    <a class="navbar-brand" href="#Aboutme">JASON PAULINO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#Aboutme">ABOUT<span class="sr-only"></span></a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      
     </ul>
   </div>
-</nav>
-
-<div class='jumbotron'>
-  <div class='row'>
-    <div class='col-lg-12'>
-      <h1>ABOUT ME</h1>
-      <br>
-      <p class='aboutText'>My name is Jason Brandon Paulino. I am currently when you are reading this, 15 years old. Most of my hobbied to do in my free time to code, snd play video games. I hope to be a successful software developer in the near future</p>
-    </div>
   </div>
+</nav>
+<!--<div data-spy="scroll" data-target="#Navbar" data-offset="0">-->
+<div class='container-fluid'>
+  <div class='jumbotron' id='Aboutme'>
+    <h1>JASON PAULINO</h1>
+    <hr>
+    <p>My name is Jason Brandon Paulino. I go to the Highschool of Language and Diplmacy (HSLAD). I am currently when you are reading this, 15 years old. Most of my hobbied to do in my free time to code, snd play video games. I hope to be a successful software developer in the near future.</p>
 </div>
-
-<div class='jumbotron'>
-  <div class='row'>
-    <div class='col-lg-12'>
+</div>
+  
+  <div class='container-fluid'>
+    <div class='jumbotron' id='projects'>
       <h1>PROJECTS</h1>
-      <div class='container'>
-        
+      <hr>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -102,13 +119,15 @@ h1 {
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="First slide">
+      <a href='#'><img class="https://johnsonchen22002.github.io/thepurrfectscoop2/"></a>
+    </div>
+    
+
+    <div class="carousel-item">
+      <a href='#'><img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Second slide"></a>
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Third slide">
+      <a href='#'><img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Third slide"></a>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -121,7 +140,29 @@ h1 {
   </a>
 </div>
 </div>
-    </div>
+</div> 
+  
+<ul>
+  <li>
+    Email: jasonp0830@gmail.com
+  </li>
+  
+</ul>
+<div class='container-fluid'>
+  <div class='jumbotron' id='contact'>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>CONTACT</h1>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <a href="mailto:" class="btn btn-lg btn-outline">
+                            <i class="fa fa-paper-plane" id='Messageme'></i> Message Me!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
   </div>
 </div>
 
