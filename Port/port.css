@@ -1,1 +1,14 @@
+#navbarTitle{
+    font-size:25px;
+    font-family:Helvetica;
+}
 
+.nav-item{
+    font-size:15px;
+    font-family:Helvetica;
+    margin-right:100px;
+}
+
+.navbar-nav{
+    margin:200px;
+}

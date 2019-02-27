@@ -1,187 +1,278 @@
-<!-- 
-    Class 1:
-        1.1 Wireframe your project
-        1.2 Fork and clone the repo and set up your project workspace
-    Class 2:  
-        2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
-        2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns
-    Class 3:  
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
-
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='eng'>
 <head>
-    <!--Title -->
-    <title>JasonP's Portfolio</title>
-    
-    <!--Meta Tags-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Your CSS  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/Port/port.css">
-    
-    <!-- Booststrap Link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/port.css" rel="stylesheet">
-    
-    <!-- Fontawesome CSS  -->
-    
+	<meta charset="utf-8">
+	<title>Jason's Portfolio</title>
+
+	<!-- ICONS linked to HTML -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- CSS file being linked with HTML file -->
+	<link rel="stylesheet" type="text/css" href="/Portfolio/jason.css">
+
+	<!-- Bootstrap CSS being linked with HTML file -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<style type="text/css">
+
+	#welcomeTitle{
+		font-size: 150px;
+	}
+
+	#welcomeText{
+		font-size: 35px;
+		margin-top: 40px;
+	}
+
+	.Titles{
+		font-size:60px;
+	}
+
+	.introText{
+		font-size: 20px;
+		margin-top: px;
+	}
+
+	#passionBox{
+		margin-top: 55px;
+	}
+
+	#welcomeBox{
+		margin-top:0px;
+	}
+
+	form{
+		margin-top: 40px;
+	}
+
+	#emailBox{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#messageBox{
+		margin-top: 30px;
+	}
+
+	#phoneBox{
+		margin-top: 30px;
+	}
+
+	.nav-item{
+		font-size: 17px;
+		margin-left:25px;
+	}
+
+	.navbar-brand{
+		font-size:30px;
+		margin-left:20px;
+	}
+
+	.navbar-nav{
+		margin-left:725px;
+	}
+
+	#footer{
+		height:160px;
+		margin-top: 50px;
+	}
+
+	#instagramLogo{
+		width:30px;
+	}
+
+	#submitBtn{
+		margin-top: 30px;
+	}
+
+	#portfolio{
+		margin-top: 50px;
+	}
+
+	.projects{
+		margin-top: 50px;
+	}
+
+	.liveBtn{
+		margin-left: 10px;
+	}
+
+	.previewCode{
+		margin-left: 10px;
+	}
+	</style>
+
+
+
 </head>
-<style>
-body {
-    background-color:grey;
-    font-family: Helvetica Bold;
-}
-
-
-
-.navbar-brand {
-    font-size: 30px;
-    font-family: Helvetica Bold;
-}
-
-.nav-item {
-    font-size:15px;
-    padding:5px;
-    text-align: center;
-    font-family: Helvetica Bold;
-}
-h1 {
-  text-align:center;
-}
-
-#Aboutme{
-  margin-top:90px;
-}
-
-.btn {
-  text-align:center;
-}
-
-#projects{
-  margin-bottom:30px;
-}
-
-#Messageme{
-  font-size:50px;
-}
-</style>
-
 <body>
+	<!-- NAVAGATION BAR -->
+	<nav class="navbar stick-top navbar-expand-xl navbar-dark bg-dark">
+  			<a class="navbar-brand" style="color:white;">Jason Paulino</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
+    		<ul class="navbar-nav navbar">
+      			<li class="nav-item">
+        			<a class="nav-link" href="#aboutMebox">About Me</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#portfolio">Portfolio</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#contact">Contact</a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-  
-  <div class='container'>
-    <a class="navbar-brand" href="#Aboutme">JASON PAULINO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-      
-        <li class="nav-item">
-          <a class="nav-link" href="#Aboutme">ABOUT<span class="sr-only"></span></a>
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">PROJECTS</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
-        </li>
-      
-    </ul>
-  </div>
-  </div>
-</nav>
-<!--<div data-spy="scroll" data-target="#Navbar" data-offset="0">-->
-<div class='container-fluid'>
-  <div class='jumbotron' id='Aboutme'>
-    <h1>JASON PAULINO</h1>
-    <hr>
-    <p>My name is Jason Brandon Paulino. I go to the Highschool of Language and Diplmacy (HSLAD). I am currently when you are reading this, 15 years old. Most of my hobbied to do in my free time to code, snd play video games. I hope to be a successful software developer in the near future.</p>
-</div>
-</div>
-  
-  <div class='container-fluid'>
-    <div class='jumbotron' id='projects'>
-      <h1>PROJECTS</h1>
-      <hr>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <a href='#'><img class="https://johnsonchen22002.github.io/thepurrfectscoop2/"></a>
-    </div>
-    
+	<!-- WELCOME BOX -->
+	<div class='jumbotron' id='welcomeBox'>
+		<div class='container'>
+			<h1 id='welcomeTitle'>Welcome!<img src='https://benefits.hr.ufl.edu/wp-content/uploads/sites/3/2017/08/gif-blobby-wave_small.gif'></h1>
+			<p id='welcomeText'>This is my portfolio website where you able to see my work, get to know a little about me and contact me. Enjoy!</p>
+		</div>
+	</div>
 
-    <div class="carousel-item">
-      <a href='#'><img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Second slide"></a>
-    </div>
-    <div class="carousel-item">
-      <a href='#'><img class="d-block img-fluid" src="https://i.ytimg.com/vi/84qJttZjp94/maxresdefault.jpg" alt="Third slide"></a>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-</div> 
-  
-<ul>
-  <li>
-    Email: jasonp0830@gmail.com
-  </li>
-  
-</ul>
-<div class='container-fluid'>
-  <div class='jumbotron' id='contact'>
-    <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1>CONTACT</h1>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="mailto:" class="btn btn-lg btn-outline">
-                            <i class="fa fa-paper-plane" id='Messageme'></i> Message Me!
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-  </div>
-</div>
+	<!-- ABOUT ME BOX -->	
+	<div class='container' id='aboutMebox'>
+		<h1 class='Titles'>About Me</h1>
+		<hr>
+		<p class='introText'>My name is Jason Paulino and I am currently 16 years old. At the moment, I am in highschool and I attend The Highschool for Language & Diplomacy. I live in the Bronx along with my only parent, my mom. Some things I do in my spare time is play video games competitvely, code, weight training, and spend time with loved ones.</p>
+	</div>
+	<div class='container' id='passionBox'>
+		<h1 class='Titles'>My Passion for Coding</h1>
+		<hr>
+		<p class='introText'>Around the 8th grade, I was introduced to coding from my Math teacher. Instantly, I was hooked to the concept of coding. The idea itself, that I am able to colelct my ideas and place them onto a screen, is just simply amazing. Although, my favorite thing about coding is that I am able work with multiple people, and, share ideas along with similar intersts with those people. Coming from a competitve gaming background, working together and communicating has always been the key to success.</p>
+	</div>
+
+	<!-- PORTFOLIO -->
+	<div class='jumbotron' id='portfolio'>
+		<div class='container'>
+			<h1 class='Titles' id='projectTitle'>Projects</h1>
+			<hr>
+			<div id='purrfectscoop' class="media projects">
+	  			<img src="https://dl1.cbsistatic.com/i/r/2017/03/27/2202cd77-9c12-4fb7-9ce6-0d18adbc93b2/thumbnail/64x64/902dbd093a6f784fa9c52fdb1c959ed6/imgingest-7857767962753210134.png" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">The Purrfect Scoop<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+
+	    			This website was created for a client. The concept of the website was based on the clients interest: Cats and ice cream. The website allows you to adopt a cat and if you already have one, we have located a place where you are able to enjoy some ice cream with your cat!
+	    		</div>
+			</div>
+			<div id='gitFinder' class="media projects">
+	  			<img src="https://media.giphy.com/media/Ogm4JKCRyBNL2/giphy.gif" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Git Finder<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			This applications purpose is to display a gif onto the webpage depending on whatever you search in the search bar. This was possible with a gif API that we are using to display the gif. Go ahead and search your favorite gif!
+	    		</div>
+			</div>
+			<div id='pigLatin' class="media projects">
+	  			<img src="https://dl1.cbsistatic.com/i/r/2018/06/14/0439c3c1-d78e-45d1-b7ad-0b0f5249a234/thumbnail/64x64/e48ce8d01218daef32dbaa61177354b8/imgingest-4234168508671026060.png" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Pig Latin<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			This application creates a made-up language formed from English by transferring the initial consonant or consonant cluster of each word to the end of the word and adding a vocalic syllable (usually ˈpiɡ ˌlatn: so chicken soup would be translated to ickenchay oupsay . Pig Latin is typically spoken playfully, as if to convey secrecy. Type in any word and it shall be pig latinized!
+	    		</div>
+			</div>
+			<div id='weather' class="media projects">
+	  			<img src="https://addons-media.operacdn.com/media/extensions/45/176145/0.3.3-rev1/icons/icon_64x64_ed93ef9e0a38f3cb5d29ff991c420ab6.png" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">H2J<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			This application allows you to know what the temperature is in your current location, or the location you msy be attneding. This was possible by using a weather API to know the temperatures for designated locations. Simply type in any zipcode of your choice, and it will tell you the current temperature for that zipcode. Go ahead, give it a try!
+	    		</div>
+			</div>
+			<div id='rps' class="media projects">
+	  			<img src="https://dl1.cbsistatic.com/i/r/2018/06/04/0d0833e8-0ecf-4abf-8472-a91b1480ad96/thumbnail/64x64/58b2950bdd626e217a35896106c55ad0/imgingest-63113108554684794.png" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Rock, Paper, Scissors<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			This application allows you to play a game of rock, paper, scissors with the computer. Simply choose 1 of the 3 options (rock, paper, or scissors) and see if you win. Go on, have some fun! Be careful, Ive heard the computer is a pro at this!
+	    		</div>
+			</div>
+			<div id='musicPlaylist' class="media projects">
+	  			<img src="https://s.yimg.com/ny/api/res/1.2/PB_JfK8X16CHL9sDzZkYrQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/instyle_846/5f3b933acdebdbd66ef262fb97484bc6" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Music Playist<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			This application allows you to take the songs you love to listen to and add them in as a group, well know as a playlist. Go ahead and get to listening to all your favorite songs
+	    		</div>
+			</div>
+			<div id='sys' class="media projects">
+	  			<img src="http://www.moneyoffice.co.uk/Image/auction_hammer_64.png" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Smash Yo Stress<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			Do you have alot of stress? Do you want to releive that stress? This is where Smash Yo Stress comes into play! A game that allows you to be a person that can smash anything within your sight with one huge hammer! What are you waiting for? SMASH YO STRESS!
+	    		</div>
+			</div>
+			<div id='artGallery' class="media projects">
+	  			<img src="" class="mr-3" alt="...">
+	 			<div class="media-body container">
+	    			<h5 class="mt-0">Art Gallery<a href='#'><button type="live" class="btn btn-success btn-sm liveBtn">Live Preview</button><button class='previewCode btn btn-sm btn-primary' type='code'>Preview Code</button></h5></a>
+	    			this application allows you to display your art onto the page. Simply just add, then, place your descrition of the art, your name, and the URL of your art. Its time to display your creativity picasso!
+	    		</div>
+			</div>
+		</div>
+	</div>
 
 
 
+	<!-- CONTACT -->
+	<div class='container' id='contact'>
+		<h1 class='Titles'>Contact Me</h1>
+		<hr>
+		<form>
+  			<div class="form-row">
+    			<div class="col">
+    				<label class='name' for="firstName">First Name</label>
+      				<input type="text" class="form-control" placeholder="First name">
+    			</div>
+    			<div class="col">
+    				<label class='name'for="lastName">Last Name</label>
+      				<input type="text" class="form-control" placeholder="Last name">
+    			</div>
+  			</div>
+  			<div id='emailBox' class='form row'>
+    			<div class='col'>
+    				<label id='emailTitle' for="inputEmail">Email address</label>
+    				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    			</div>
+    		</div>
+    		<div id='phoneBox' class='form row'>
+    			<div class='col'>
+    				<label id='phoneTitle' for="inputPhone">Phone number</label>
+    				<input type="number" class="form-control" id="phoneNumbder" aria-describedby="numberHelp" placeholder="Enter Phone number">
+    				<small id="numberHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+    			</div>
+    		</div>
+			<div id='messageBox' class='form row'>
+    			<div class='col'>
+    				<label for="message">Message</label>
+    				<textarea class="form-control" id="message" rows="3"></textarea>
+    			</div>
+  			</div>
+  			<button id='submitBtn' type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
 
-    
-
-    
-    <!-- Jquery Script -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-   
-    <!--Bootstrap Javascript -->
-    
-    
-    <!-- Your Javascript -->
-    
+	<!-- FOOTER -->
+		<nav id='footer' class="navbar navbar-dark bg-dark">
+  			<div class='container'>
+  				<h1 style='color:grey'>Social Media</h1>
+  				<ul>
+  					<span style="font-size: 50px; color:red;">
+  						<a href='https://www.instagram.com/jason_ohmy/?hl=en''><i class="fab fa-instagram"></i></a>
+					</span>
+					
+  				</ul>
+  			</div>
+		</nav>
 </body>
 
+	<!-- JS file being linked with HTML -->
+	<script src="/Portfolio/jason.js"></script>
+
+	<!-- Booststrap JS being implemented to the HTML -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>
